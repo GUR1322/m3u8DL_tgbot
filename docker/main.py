@@ -20,7 +20,7 @@ app = Client("ytdl-main", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 authorized_users_env = os.environ.get("6179653550")
 
 # 将环境变量值解析为实际的用户ID列表
-AUTHORIZED_USERS = [int(user_id) for user_id in authorized_users_env.split(",")] if authorized_users_env else []
+AUTHORIZED_USERS = [int(user_id) for user_id in authorized_users_env.split(",")] if authorized_users_env else [6179653550]
 
 
 # AUTHORIZED_USERS = [userid,userid-2]
