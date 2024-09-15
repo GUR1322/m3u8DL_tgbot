@@ -86,7 +86,7 @@ def ytdl_download(url: str, savedir: str):
             "--no-log",
             "--auto-select",
             "--binary-merge",
-            "-M mp4 --mux-after-done"
+            "-M", "mp4", "--mux-after-done"
         ]
         print("N_m3u8DL is being used to download videos in m3u8 format: ", url)
         # Execute download command
