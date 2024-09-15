@@ -82,10 +82,11 @@ def ytdl_download(url: str, savedir: str):
             "--tmp-dir", tempdir,
             "--save-dir", savedir,
             "--save-name", "Pogo.mp4", # Use a randomly generated UUID as the save file name
-            "--key", "01788c60ef0d5e7abb23d69527fad4cb:852f81dae98e992c4525885c841bc19a", "-M mp4 --mux-after-done",
+            "--key", "01788c60ef0d5e7abb23d69527fad4cb:852f81dae98e992c4525885c841bc19a",
             "--no-log",
             "--auto-select",
-            "--binary-merge"
+            "--binary-merge",
+            "-M mp4 --mux-after-done"
         ]
         print("N_m3u8DL is being used to download videos in m3u8 format: ", url)
         # Execute download command
