@@ -5,9 +5,9 @@ from pyrogram import Client, filters, types, enums
 from downloader import download_and_upload_video
 
 # Initialize the Pyrogram client
-api_id =  os.environ.get("20366957") # Replace with your actual api_id
-api_hash = os.environ.get("601b92979a6047a842f545f1e898c921")  # Replace with your actual api_hash
-bot_token = os.environ.get("6933914894:AAHLretL4n3ProTHHbyk9ztqRNvmyU80Kd0")  # Replace with your actual bot_token
+api_id =  os.environ.get("APP_ID", "20366957") # Replace with your actual api_id
+api_hash = os.environ.get("APP_HASH", "601b92979a6047a842f545f1e898c921")  # Replace with your actual api_hash
+bot_token = os.environ.get("TOKEN", "6933914894:AAHLretL4n3ProTHHbyk9ztqRNvmyU80Kd0")  # Replace with your actual bot_token
 PREMIUM = os.environ.get("PREMIUM") == 'False'
 
 logging.basicConfig(level=logging.INFO)
