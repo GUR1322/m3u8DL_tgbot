@@ -82,7 +82,7 @@ def ytdl_download(url: str, savedir: str):
             "--tmp-dir", tempdir,
             "--save-dir", savedir,
             "--save-name", "Pogo.mp4", # Use a randomly generated UUID as the save file name
-            "--key", "01788c60ef0d5e7abb23d69527fad4cb:852f81dae98e992c4525885c841bc19a", "-M", "mp4", "--mux-after-done",
+            "--key", "01788c60ef0d5e7abb23d69527fad4cb:852f81dae98e992c4525885c841bc19a", "-M mp4 --mux-after-done",
             "--no-log",
             "--auto-select",
             "--binary-merge"
