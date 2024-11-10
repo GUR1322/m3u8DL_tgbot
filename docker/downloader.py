@@ -80,8 +80,8 @@ def ytdl_download(url: str, savedir: str):
             "--save-dir", savedir,
             "--save-name", random_save_name,  # Use a randomly generated UUID as the save file name
             "--auto-select",
-            "--binary-merge"
-            "--live-real-time-merge" ,
+            "--binary-merge",
+            "--live-real-time-merge",
             "--binary-merge", 
             "--mp4-real-time-decryption", 
             "--use-shaka-packager",  
