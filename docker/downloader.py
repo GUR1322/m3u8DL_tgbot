@@ -73,7 +73,23 @@ def ytdl_download(url: str, savedir: str):
         # Generate random UUID as save file name
         random_save_name = f"{uuid.uuid4().hex}"
         # Build download command as argument list
-        download_command = [url]
+        download_command = [
+            "./N_m3u8DL-RE",
+            url,
+            "--tmp-dir", tempdir,
+            "--save-dir", savedir,
+            "--save-name", random_save_name,  # Use a randomly generated UUID as the save file name
+            "--auto-select",
+            "--binary-merge"
+            "--live-real-time-merge" ,
+            "--binary-merge", 
+            "--mp4-real-time-decryption", 
+            "--use-shaka-packager",  
+            "--key", 
+            "4b967f351139503a88b1d1945203150b:c3e26279cc513e13154958f934141dc0",  
+            "-M mp4",
+            "--mux-after-done"
+        ]
         print("N_m3u8DL is being used to download videos in m3u8 format: ", url)
         # Execute download command
         subprocess.run(download_command, check=True)
