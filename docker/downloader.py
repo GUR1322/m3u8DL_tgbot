@@ -77,7 +77,7 @@ def ytdl_download(url: str, savedir: str):
             "./N_m3u8DL-RE",
             url,
             "-H",
-            "cookie:&__hdnea__=st=1731240310~exp=1731326710~acl=/*~hmac=d2f614c277516cff516fa7f5febd906eae93b4a9014f172e1b46cfebee2f4f5e",
+            "cookie:__hdnea__=st=1731240310~exp=1731326710~acl=/*~hmac=d2f614c277516cff516fa7f5febd906eae93b4a9014f172e1b46cfebee2f4f5e",
             "--tmp-dir", tempdir,
             "--save-dir", savedir,
             "--save-name", random_save_name,  # Use a randomly generated UUID as the save file name
