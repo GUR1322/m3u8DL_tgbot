@@ -87,7 +87,8 @@ def ytdl_download(url: str, savedir: str):
             "--use-shaka-packager",  
             "--key", 
             "4b967f351139503a88b1d1945203150b:c3e26279cc513e13154958f934141dc0",  
-            "-M mp4",
+            "-M",
+            "mp4",
             "--mux-after-done"
         ]
         print("N_m3u8DL is being used to download videos in m3u8 format: ", url)
