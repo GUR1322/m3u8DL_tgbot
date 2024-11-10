@@ -73,7 +73,7 @@ def ytdl_download(url: str, savedir: str):
         # Generate random UUID as save file name
         random_save_name = f"{uuid.uuid4().hex}"
         # Build download command as argument list
-        download_command = ['ffmpeg', '-y', '-i', url, '-vcodec', 'copy', '-t', '00:00:50', 'TEST.mp4']
+        download_command = [url]
         print("N_m3u8DL is being used to download videos in m3u8 format: ", url)
         # Execute download command
         subprocess.run(download_command, check=True)
